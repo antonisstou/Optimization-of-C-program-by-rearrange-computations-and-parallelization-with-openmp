@@ -12,4 +12,11 @@ cores in parallel.
               --n 5000 --r 1600
    pairs and take the execution time.
 
-2. 
+2. Afterward in file 1a_lif1d.c the for loop(line 329, file lif1d.c), where network elements is updated and u[i] = 0 if u[i] > uth is set 
+is removed and it is replaced by:
+
+   temp = u;
+   u = uplus;
+   uplus = temp;
+
+with these commands pointers u and uplus change address using the pointer temp.
