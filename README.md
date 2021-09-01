@@ -20,3 +20,5 @@ is removed and it is replaced by:
    uplus = temp;
 
 with these commands pointers u and uplus change address using the pointer temp.
+
+3. 
