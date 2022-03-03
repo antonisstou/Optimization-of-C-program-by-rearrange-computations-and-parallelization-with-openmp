@@ -37,3 +37,13 @@ to multiply the matrix σij with vector uj(t). So the j loop that computes (∑�
 is droped.
 
 Parallel code.
+
+5. The performance gets more improvement when openmp is used in order to parallelize i 
+for loop, so the workload is distributed to different threads that runs parallel in the
+cpu. In order to parallelize i for loop we use the directive:
+
+           #pragma omp parallel for private(j, sum).
+
+Some more files.
+
+code_performance_improvement.png: diagram that shows the code performance.
