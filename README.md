@@ -46,4 +46,5 @@ cpu. In order to parallelize i for loop we use the directive:
 
 Some more files.
 
-code_performance_improvement.png: diagram that shows the code performance.
+code_performance_improvement.png: Diagram that shows the code performance.
+ploting.m: Octave script to plot the performance diagram.
