@@ -32,6 +32,8 @@ So     ∑σij•[uj(t) – ui(t)] = ∑σij•uj(t) – ui(t)•∑σij,
 where the second part is constant and it can computed one time out of the three fro loops
 decrease the amount of computations per iteration.
 
-4.
+4. After doing the previous step in file 1c_lif1d.c MKL's cblas_dgemv is used in order 
+to multiply the matrix σij with vector uj(t). So the j loop that computes (∑σij•uj(t))
+is droped.
 
 Parallel code.
