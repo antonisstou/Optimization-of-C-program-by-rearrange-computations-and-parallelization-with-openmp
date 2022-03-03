@@ -2,6 +2,8 @@ We use LIF(Leaky Integrate-and-Fire) model to show how program's performance can
 code suffling and changes. Finaly we increase performance using openmp in order to run the program on more cpu
 cores in parallel.
 
+Serial code.
+
 1. The process start given the C program lif1d.c
    -Compile using the following command: gcc -O3 -Wall -Wextra -o lif1d lif1d.c
    -Run the executable as ./lif1d --n N --r R , where N: number of neurons and R: number of neighbors
@@ -21,4 +23,15 @@ is removed and it is replaced by:
 
 with these commands pointers u and uplus change address using the pointer temp.
 
-3. 
+3. In file 1b_lif1d.c the code performance gets more improvement by reorganizing the
+basic calculation.
+
+
+So     ∑σij•[uj(t) – ui(t)] = ∑σij•uj(t) – ui(t)•∑σij,
+
+where the second part is constant and it can computed one time out of the three fro loops
+decrease the amount of computations per iteration.
+
+4.
+
+Parallel code.
