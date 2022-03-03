@@ -48,3 +48,17 @@ Some more files.
 
 code_performance_improvement.png: Diagram that shows the code performance.
 ploting.m: Octave script to plot the performance diagram.
+
+About the system where the measurements teked place.
+   Laptop model         : Acer Aspire E1-510
+   O/S                  : Ubuntu 16.04.6 LTS
+   Prossesor name       : Intel® Pentium® quad core (N3520)
+   Prossesor speed      : 2.16 GHz
+   Number of prossesors : 1
+   Total # of cores     : 4
+   Total # of threads   : 4
+   L1d cache            : 24K
+   L1i cache            : 32K
+   L2 cache             : 32K
+   Memory               : 4GB
+   gcc version          : 5.1.3
