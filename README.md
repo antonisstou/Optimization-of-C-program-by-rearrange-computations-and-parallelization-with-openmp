@@ -4,7 +4,7 @@ cores in parallel.
 
 1. The process start given the C program lif1d.c
    -Compile using the following command: gcc -O3 -Wall -Wextra -o lif1d lif1d.c
-   -Run the executable as ./lif1d --n N --r R , where N: number of neyrons and R: number of neighbours
+   -Run the executable as ./lif1d --n N --r R , where N: number of neurons and R: number of neighbors
    we run for --n 1000 --r 350
               --n 2000 --r 700
               --n 3000 --r 1000
